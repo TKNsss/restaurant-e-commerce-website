@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script
+    src="https://kit.fontawesome.com/cc11e1c1b7.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+  <header class="header-top">
+    <div class="container flex">
+      <div class="menuToggle">
+        <input id="header" class="check" type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <a target="_self" href="index.html" class="header-top__home-link">
+        <img
+          src="images/logo.png"
+          alt="create responsive layout"
+          class="logo"
+        />
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="categories.html" class="nav__link">Categories</a></li>
+          <li class="nav__item"><a href="foods.html" class="nav__link">Foods</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+          <li class="nav__item nav-item--login"><a href="login.html" class="nav__link">Login</a></li>
+        </ul>
+      </nav>
+
+      <div class="login">
+        <a href="login.html" class="login-link"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="food-search">
+    <div class="container">
+      <form class="food-search__form" action="food-search.html" method="POST">
+        <input type="search" name="search" placeholder="Search for Food..." required>
+        <input type="submit" name="submit" value="Search" class="food-search__btn btn btn-primary">
+      </form>
+    </div>
+  </section>
+
+  <section class="categories">
+    <div class="container">
+      <h2 class="categories__title">Explore Foods</h2>
+
+      <div class="slide-container swiper">
+        <div class="slide-content swiper-wrapper">
+          <div class="swiper-slide">
+            <a class="food-link" href="foods.html#pizza">
+              <div class="food-box">
+                <img class="food-img" src="images/pizza.jpg" alt="Pizza">
+
+                <h3 class="sub-title sub-title--white">Pizza</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a class="food-link" href="foods.html#burger">
+              <div class="food-box">
+                <img class="food-img" src="images/burger.jpg" alt="Burger">
+
+                <h3 class="sub-title sub-title--white">Burger</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a class="food-link" href="foods.html#tradition">
+              <div class="food-box">
+                <img class="food-img" src="images/momo.jpg" alt="traditional">
+
+                <h3 class="sub-title sub-title--white">Tradition</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a class="food-link" href="foods.html#beverage">
+              <div class="food-box">
+                <img class="food-img" src="images/foods/drink-categories-bg.jpg" alt="drink-categories-bg">
+
+                <h3 class="sub-title sub-title--white">Beverage</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a class="food-link" href="foods.html#alcohol">
+              <div class="food-box">
+                <img class="food-img" src="images/foods/alcoholic-bev.jpg" alt="alcoholic-beverage">
+
+                <h3 class="sub-title sub-title--white">Alcohol</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a class="food-link" href="foods.html#dessert">
+              <div class="food-box">
+                <img class="food-img" src="images/foods/dessert.jpg" alt="dessert">
+
+                <h3 class="sub-title sub-title--white">Dessert</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="food-menu">
+    <div class="container">
+      <h2 class="food-menu__title">Food Menu</h2>
+
+      <div class="menu-grid">
+        <div class="food-menu__box">
+          <div class="food-menu-flex">
+            <div class="food-menu__img-wrapper">
+              <img src="images/foods/Burrata-Pistachio-White-Pizza.jpg" alt="Burrata-Pistachio-White-Pizza" class="food-menu__img">
+            </div>
+
+            <div class="food-menu__desc">
+              <h4 class="food-title limit-text-to-1-line">Burrata Pistachio White Pizza</h4>
+              <p class="food-price">$67.99</p>
+              <p class="food-detail limit-text-to-2-lines">
+                This Pistachio White Pizza is made with plenty of burrata cheese and topped with red onions, arugula and pistachios for a salty kick!
+              </p>
+              
+              <div class="food-menu__btn">
+                <a href="foods.html#pizza" class="order-btn btn btn-primary">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-menu__box">
+          <div class="food-menu-flex">
+            <div class="food-menu__img-wrapper">
+              <img src="images/foods/dough-pizza.jpg" alt="dough-pizza" class="food-menu__img">
+            </div>
+
+            <div class="food-menu__desc">
+              <h4 class="food-title limit-text-to-1-line">Dough Pizza</h4>
+              <p class="food-price">$27.99</p>
+              <p class="food-detail limit-text-to-2-lines">
+                Puffy edges with a chewy crumb, enough structure so you can pick up slices rather than being a sloppy mess.
+              </p>
+
+              <div class="food-menu__btn">
+                <a href="foods.html#pizza" class="order-btn btn btn-primary">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-menu__box">
+          <div class="food-menu-flex">
+            <div class="food-menu__img-wrapper">
+              <img src="images/foods/Classic-Grilled-Cheeseburger.jpg" alt="Classic-Grilled-Cheeseburger" class="food-menu__img">
+            </div>
+
+            <div class="food-menu__desc">
+              <h4 class="food-title limit-text-to-1-line">Classic Grilled Cheeseburger</h4>
+              <p class="food-price">$16.99</p>
+              <p class="food-detail limit-text-to-2-lines">
+                These juicy delicious burgers are perfect on the grill or stovetop on your grill pan or skillet.
+              </p>
+
+              <div class="food-menu__btn">
+                <a href="foods.html#burger" class="order-btn btn btn-primary">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-menu__box">
+          <div class="food-menu-flex">
+            <div class="food-menu__img-wrapper">
+              <img src="images/foods/Halloumi-Burgers.jpg" alt="Halloumi-Burgers" class="food-menu__img">
+            </div>
+
+            <div class="food-menu__desc">
+              <h4 class="food-title limit-text-to-1-line">Halloumi Burgers</h4>
+              <p class="food-price">$25.49</p>
+              <p class="food-detail limit-text-to-2-lines">
+                Halloumi Burgers with juicy mushrooms and a sticky sweet sauce! 
+              </p>
+
+              <div class="food-menu__btn">
+                <a href="foods.html#burger" class="order-btn btn btn-primary">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-menu__box">
+          <div class="food-menu-flex">
+            <div class="food-menu__img-wrapper">
+              <img src="images/foods/pho.jpg" alt="pho" class="food-menu__img">
+            </div>
+
+            <div class="food-menu__desc">
+              <h4 class="food-title limit-text-to-1-line">Pho</h4>
+              <p class="food-price">$14.99</p>
+              <p class="food-detail limit-text-to-2-lines">
+                The healthy national dish of Vietnam, low on fat, brimming with lean meets.
+              </p>
+
+              <div class="food-menu__btn">
+                <a href="foods.html#tradition" class="order-btn btn btn-primary">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-menu__box">
+          <div class="food-menu-flex">
+            <div class="food-menu__img-wrapper">
+              <img src="images/foods/bun-cha.jpg" alt="bun-cha" class="food-menu__img">
+            </div>
+
+            <div class="food-menu__desc">
+              <h4 class="food-title limit-text-to-1-line">Bun cha</h4>
+              <p class="food-price">$10.99</p>
+              <p class="food-detail limit-text-to-2-lines">
+                Bun cha is grilled pork and dry noodle dish thought to have originated in Ha Noi.
+              </p>
+
+              <div class="food-menu__btn">
+                <a href="foods.html#tradition" class="order-btn btn btn-primary">Order Now</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="food-menu__link">
+      <a class="see-all-foods-link" href="foods.html">See All Foods</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div class="grid">
+          <div class="footer__col">
+            <h4 class="section-title">About our restaurant</h4>
+
+            <div class="footer__btn js-footer-btn">
+              <input id="footer-toggle-1" class="btn-toggle" type="checkbox" data-target="1" />
+              <span class="icon-title"></span>
+              <span class="icon-title"></span>
+            </div>
+
+            <div class="footer__content" id="1">
+              <p>
+                A 3 Michelin stars restaurant located in 3 different regions in Vietnam serving unique dishes all over the world. "Dedicated, considerate, and hospitable" is our motto.
+              </p>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="section-title">Getting around</h4>
+
+            <div class="footer__btn js-footer-btn">
+              <input id="footer-toggle-2" class="btn-toggle" type="checkbox" data-target="2" />
+              <span class="icon-title"></span>
+              <span class="icon-title"></span>
+            </div>
+
+            <div class="footer__content" id="2">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="index.html">Home</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#about">About</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="section-title">Other things</h4>
+
+            <div class="footer__btn js-footer-btn">
+              <input id="footer-toggle-3" class="btn-toggle" type="checkbox" data-target="3" />
+              <span class="icon-title"></span>
+              <span class="icon-title"></span>
+            </div>
+
+            <div class="footer__content" id="3">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#home">Best seller</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#about">Review</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#contact">Our blog</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#contact">Advertisement</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="section-title">And more</h4>
+
+            <div class="footer__btn js-footer-btn">
+              <input id="footer-toggle-4" class="btn-toggle" type="checkbox" data-target="4" />
+              <span class="icon-title"></span>
+              <span class="icon-title"></span>
+            </div>
+
+            <div class="footer__content" id="4">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#home">Certificate</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#about">Employ</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#contact">Recognition</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#contact">Most vote</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <h4 class="contact">Contact with us</h4>
+
+        <div class="social-media-list">
+          <a class="social-link" href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a class="social-link" href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a class="social-link" href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a class="social-link" href="#">
+            <i class="fa-brands fa-tiktok">
+              <div class="tiktok"></div>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+  <script type="module" src="/scripts/index.js"></script>
+</body>
+</html>

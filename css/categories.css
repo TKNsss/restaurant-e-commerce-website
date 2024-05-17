@@ -1,0 +1,44 @@
+.categories {
+  background: var(--food-menu);
+}
+
+.categories__title {
+  margin-top: 1.5em;
+}
+
+.isDisabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.isDisabled > .food-link {
+  display: inline-block;  
+  pointer-events: none;
+}
+
+.isDisabled .food-img:hover {
+  opacity: 1;
+}
+
+@media (min-width: 550px) {
+  .food-box {
+    margin-bottom: 0;
+  }
+
+  .food-flex {
+    max-width: 750px;
+    flex-wrap: wrap;
+    gap: .75em;
+    margin: 0 auto;
+  }
+
+  .food-link + .food-link {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 700px) {
+  .categories__title {
+    margin-top: 3em;
+  }
+}

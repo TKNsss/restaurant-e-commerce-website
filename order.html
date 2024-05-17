@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/order.css">
+
+  <script
+    src="https://kit.fontawesome.com/cc11e1c1b7.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+  <header class="header-top">
+    <div class="container flex">
+      <div class="menuToggle">
+        <input id="header" class="check" type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <a target="_self" href="index.html" class="header-top__home-link">
+        <img
+          src="images/logo.png"
+          alt="create responsive layout"
+          class="logo"
+        />
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="categories.html" class="nav__link">Categories</a></li>
+          <li class="nav__item"><a href="foods.html" class="nav__link">Foods</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="login">
+        <a href="login.html" class="login-link"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="order-section">
+    <div class="order-container">
+      <h2 class="order-section__title">Confirm your order</h2>
+
+      <form action="#" class="order-section__form">
+        <fieldset>
+          <legend>Selected Food</legend>
+
+          <div class="selected-box">
+            <div class="order-section__img-wrapper">
+              <img src="images/menu-pizza.jpg" alt="Chicke Hawain Pizza" class="order-section__img">
+            </div>
+
+            <div class="order-section__desc">
+              <h3 class="selected-food-title">Food Title</h3>
+              <p class="selected-food-price">$2.3</p>
+
+              <div class="order-label">Quantity: 1</div>
+              <select name="quantity" id="1" class="quantity-selector">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Delivery Details</legend>
+          
+          <div class="order-label">Full Name</div>
+          <input type="text" name="full-name" placeholder="E.g. Rick Roll" class="input-responsive" required>
+
+          <div class="order-label">Phone Number</div>
+          <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required>
+
+          <div class="order-label">Email</div>
+          <input autocomplete="email" type="email" name="email" placeholder="E.g. abc204@gmail.com" class="input-responsive" required>
+
+          <div class="order-label">Address</div>
+          <textarea autocomplete="address-level1" name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
+
+          <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+</html>

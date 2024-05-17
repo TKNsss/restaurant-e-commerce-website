@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/checkout.css">
+
+  <script src="https://kit.fontawesome.com/cc11e1c1b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header-top">
+    <div class="container flex">
+      <div class="menuToggle">
+        <input id="header" class="check" type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <a target="_self" href="index.html" class="header-top__home-link">
+        <img
+          src="images/logo.png"
+          alt="create responsive layout"
+          class="logo"
+        />
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="categories.html" class="nav__link">Categories</a></li>
+          <li class="nav__item"><a href="foods.html" class="nav__link">Foods</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="login">
+        <a href="login.html" class="login-link"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="checkout-section">
+    <div class="container">
+      <div class="page-title">Cart: <span class="grey">&#40;3 dishes&#41;</span></div>
+
+      <div class="checkout-grid">
+        <div class="order-summary js-order-summary"></div>
+        
+        <div class="payment-summary">
+          <div class="cart-summary"><i class="fa-solid fa-lock"></i> Cart Summary</div>
+
+          <div class="payment-summary-top">
+            <div class="payment-summary-row">
+              <p>Dishes &#40;<span class="cart-total-money">3</span>&#41;:</p>
+              <p class="payment-summary-money">$14.99</p>
+            </div>
+
+            <div class="payment-summary-row">
+              <p>Shipping & Handling:</p>
+              <p class="payment-summary-money">$4.99</p>
+            </div>
+
+            <div class="payment-summary-row sub-total-row">
+              <p>Total before tax:</p>
+              <p class="payment-summary-money">$24.99</p>
+            </div>
+
+            <div class="payment-summary-row">
+              <p>Estimated tax:</p>
+              <p class="payment-summary-money">$24.99</p>
+            </div>
+
+            <div class="payment-summary-row total-row">
+              <p>Order total:</p>
+              <p class="payment-summary-money">$144.99</p>
+            </div>
+          </div>
+
+          <div class="payment-summary-middle">
+            <h4 class="promotion-title">Apply a Promotion Code</h4>
+            <p class="promotion-note">Remove any spaces or dashes before hitting apply.</p>
+            <div class="input-wrapper">
+              <input type="text" class="promotion-input">
+              <button class="promotion-apply-btn">Apply</button>
+            </div>
+            <div class="checkout-btn">
+              <button class="checkout-now-btn">checkout now</button>
+              <p class="agree-privacy">By continuing to Check out, you are agreeing to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+            </div>
+          </div>
+
+          <div class="payment-summary-bottom">
+            <p class="other-checkout">Or use other checkout methods:</p>
+            <button class="paypal-btn"><img class="paypal" src="./images/paypal.png" alt="paypal-logo"></button>
+            <button class="venmo-btn"><img class="venmo" src="./images/venmo.png" alt="venmo-logo"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="./scripts/checkout.js"></script>
+</body>
+</html>

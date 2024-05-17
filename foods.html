@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foods</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/foods.css">
+
+  <script
+    src="https://kit.fontawesome.com/cc11e1c1b7.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <header class="header-top">
+    <div class="container flex">
+      <div class="menuToggle">
+        <input id="header" class="check" type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <a target="_self" href="index.html" class="header-top__home-link">
+        <img
+          src="images/logo.png"
+          alt="create responsive layout"
+          class="logo"
+        />
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="categories.html" class="nav__link">Categories</a></li>
+          <li class="nav__item"><a href="foods.html" class="nav__link">Foods</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart">
+        <a href="checkout.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-quantity js-cart-quantity"></span>
+        </a>
+      </div>
+
+      <div class="login">
+        <a href="login.html" class="login-link"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="food-search">
+    <div class="container">
+      <div class="food-search__title">
+        <h3 class="title-first">Feature Product</h3>
+        <h2 class="title-second">Popular Products</h2>
+      </div>
+
+      <details class="dropdown">
+        <summary role="button">
+          <a class="dropdown-btn">Click on me!</a>
+        </summary>
+
+        <ul class="dropdown-list">
+          <li class="dropdown-item"><a class="dropdown-link" href="#pizza">Pizza</a></li>
+          <li class="dropdown-item"><a class="dropdown-link" href="#burger">Hamburger</a></li>
+          <li class="dropdown-item"><a class="dropdown-link" href="#tradition">Tradition</a></li>
+          <li class="dropdown-item"><a class="dropdown-link" href="#beverage">Beverage</a></li>
+          <li class="dropdown-item"><a class="dropdown-link" href="#alcohol">Alcohol</a></li>
+          <li class="dropdown-item"><a class="dropdown-link" href="#dessert">Dessert</a></li>
+          <li class="dropdown-item"><a class="dropdown-link" href="#japan">Japan</a></li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <section class="food-menu">
+    <div class="food-container">
+      <h2 class="divider" id="pizza">Pizza</h2>
+      <div class="food-menu__row js-food-menu-row" id="pizza"></div>
+
+      <h2 class="divider" id="burger">Hamburger</h2>
+      <div class="food-menu__row js-food-menu-row" id="burger"></div>
+
+      <h2 class="divider" id="tradition">Tradition</h2>
+      <div class="food-menu__row js-food-menu-row" id="tradition"></div>
+
+      <h2 class="divider" id="beverage">Beverage</h2>
+      <div class="food-menu__row js-food-menu-row" id="beverage"></div>
+
+      <h2 class="divider" id="alcohol">Alcohol</h2>
+      <div class="food-menu__row js-food-menu-row" id="alcohol"></div>
+
+      <h2 class="divider" id="dessert">Dessert</h2>
+      <div class="food-menu__row js-food-menu-row" id="dessert"></div>
+
+      <h2 class="divider" id="japan">Japan</h2>
+      <div class="food-menu__row js-food-menu-row" id="japan"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div class="grid">
+          <div class="footer__col">
+            <h4 class="section-title">About our restaurant</h4>
+
+            <div class="footer__btn js-footer-btn">
+              <input id="footer-toggle-1" class="btn-toggle" type="checkbox" data-target="1" />
+              <span class="icon-title"></span>
+              <span class="icon-title"></span>
+            </div>
+
+            <div class="footer__content" id="1">
+              <p>
+                A 3 Michelin stars restaurant located in 3 different regions in Vietnam serving unique dishes all over the world. "Dedicated, considerate, and hospitable" is our motto.
+              </p>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="section-title">Getting around</h4>
+
+            <div class="footer__btn js-footer-btn">
+              <input id="footer-toggle-2" class="btn-toggle" type="checkbox" data-target="2" />
+              <span class="icon-title"></span>
+              <span class="icon-title"></span>
+            </div>
+
+            <div class="footer__content" id="2">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="index.html">Home</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#about">About</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="section-title">Other things</h4>
+
+            <div class="footer__btn js-footer-btn">
+              <input id="footer-toggle-3" class="btn-toggle" type="checkbox" data-target="3" />
+              <span class="icon-title"></span>
+              <span class="icon-title"></span>
+            </div>
+
+            <div class="footer__content" id="3">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#home">Best seller</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#about">Review</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#contact">Our blog</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#contact">Advertisement</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="section-title">And more</h4>
+
+            <div class="footer__btn js-footer-btn">
+              <input id="footer-toggle-4" class="btn-toggle" type="checkbox" data-target="4" />
+              <span class="icon-title"></span>
+              <span class="icon-title"></span>
+            </div>
+
+            <div class="footer__content" id="4">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#home">Certificate</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#about">Employ</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#contact">Recognition</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#contact">Most vote</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <h4 class="contact">Contact with us</h4>
+
+        <div class="social-media-list">
+          <a class="social-link" href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a class="social-link" href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a class="social-link" href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a class="social-link" href="#">
+            <i class="fa-brands fa-tiktok">
+              <div class="tiktok"></div>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/foods.js"></script>
+</body>
+</html>

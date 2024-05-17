@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Kim Nguyen</title>
+  
+  <link rel="stylesheet" href="css/nguyen.css">
+  <script src="https://kit.fontawesome.com/cc11e1c1b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header-top">
+    <div class="container flex">
+      <div class="menu">
+        <div class="menuToggle">
+          <input id="header" class="check" type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu__text">Menu</div>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="contact.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#footer" class="nav__link">Info</a></li> 
+          <li class="nav__item dropdown">
+            <a href="#" class="nav__link">Others</a>
+
+            <div class="dropdown-content">
+              <a href="nguyen.html">Nguyên</a>
+              <a href="khue.html">Khuê</a>
+              <a href="hoang.html">Hoàng</a>
+              <a href="hung.html">Hưng</a>
+              <a href="minh.html">Minh</a>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="nav__list nav__list--secondary">
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <i class="fa-brands fa-square-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="introduction">
+    <div class="container">
+      <div class="intro-flex">
+        <div class="pic-wrapper">
+          <img class="intro__pic" src="images/nguyen-img.jpg" alt="kim-nguyen">
+        </div>
+
+        <div class="intro__text">
+          <p class="greeting-txt uppercase-txt ">Chao ! I'm Nguyen</p>
+          <h1 class="intro__title uppercase-txt">Welcome to my personal profile</h1>
+          <p class="intro__sub-title">I'm really into exploring different sort of cuisines.</p>
+
+          <div class="intro__link">
+            <a href="#main" class="about-me-link button-font">About me</a>
+            <a href="#" class="recommended-link button-font">Let's find out my favourite dish</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main" id="main">
+    <section class="personal-info">
+      <div class="container">
+        <div class="grid">
+          <div class="block block-1">
+            <i class="fa-solid fa-circle-info"></i>
+            <h3 class="personal-info__title">Basic Info</h3>
+            <p class="personal-info__text">I am a sophomore at Electric Power University who always manages to overcome difficulties in any circumstances. With a high expectancy to become a successful person in the future, I have invested a lot in the restaurant retail chain.</p>
+          </div>
+
+          <div class="block block-2">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3 class="personal-info__title">Idea and Inspiration</h3>
+            <p class="personal-info__text">As a wise man said: <em>“Ideas come from curiosity.”</em> when I look back on the past, I see a hard-working man with the ambition to open his own restaurant. Everything started on that day,... the day my mom and I ate in that luxury local restaurant...</p>
+          </div>
+
+          <div class="block block-3">
+            <i class="fa-solid fa-gamepad"></i>
+            <h3 class="personal-info__title">Interest</h3>
+            <p class="personal-info__text">My passion is to try all the dishes in every single restaurant in the world. Besides, I like to study business management and programming.</p>
+          </div>
+        </div>
+      </div>    
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <h2>Personal</h2>
+
+      <div class="footer__block">
+        <ul class="footer__list">
+          <li class="footer__item">Name : To Kim Nguyen</li>
+          <li class="footer__item">DoB : 20/04/2004</li>
+          <li class="footer__item">Gender : Male</li>
+          <li class="footer__item">Hometown : Ha Noi</li>
+        </ul>
+        
+        <ul class="footer__list">
+          <li class="footer__item">Role : Founder of WowFood retail</li>
+          <li class="footer__item">Code : 22810310183</li>
+          <li class="footer__item">Gmail : nguyenkimto2004@gmail.com</li>
+          <li class="footer__item footer__item--tel">
+            Tel. : <img src="images/vietnam.png" alt="vietnam-flag"> 0984042029
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./scripts/contact-nav.js"></script>
+</body>
+</html>
