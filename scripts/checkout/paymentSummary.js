@@ -70,8 +70,8 @@ export function renderPaymentSummary() {
 
     <div class="payment-summary-bottom">
       <p class="other-checkout">Or use other checkout methods:</p>
-      <button class="paypal-btn"><img class="paypal" src="./images/paypal.png" alt="paypal-logo"></button>
-      <button class="venmo-btn"><img class="venmo" src="./images/venmo.png" alt="venmo-logo"></button>
+      <a href="order.html"><button class="paypal-btn"><img class="paypal" src="./images/paypal.png" alt="paypal-logo"></button></a>
+      <a href="order.html"><button class="venmo-btn"><img class="venmo" src="./images/venmo.png" alt="venmo-logo"></button></a>
     </div>
   `;
 
