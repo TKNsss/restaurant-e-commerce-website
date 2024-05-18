@@ -19,7 +19,7 @@ export function loadFromStorage() {
   }
 }
 
-function saveToStorage() {
+export function saveToStorage() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
@@ -43,5 +43,26 @@ export function addToCart(dishId) {
       quantity: 1,
     });
   }
+  saveToStorage();
+}
+
+export function updateCartQuantity(dishId, quantity) {
+  const cartItem = cart.find((item) => item.dishId === dishId);
+
+  if (cartItem) {
+    cartItem.quantity = quantity;
+  }
+  saveToStorage();
+}
+
+export function removeFromCart(dishId) {
+  const newCart = [];
+
+  cart.forEach((cartItem) => {
+    if (cartItem.dishId !== dishId) {
+      newCart.push(cartItem);
+    }
+  });
+  cart = newCart;
   saveToStorage();
 }

@@ -1,4 +1,4 @@
-import { cart } from "../data/cart.js";
+import { cart, updateCartQuantity, removeFromCart } from "../data/cart.js";
 import { getDish } from "../data/dishes.js";
 import { formatCurrency } from "../utils/money.js";
 import { updateCartLabel } from "../checkout.js";
@@ -19,7 +19,7 @@ export function renderOrderSummary() {
           <button class="minus-btn" data-minus-btn="${
             cartItem.dishId
           }">-</button>
-          <input type="number" min="1" value="${
+          <input type="number" value="${
             cartItem.quantity
           }" class="counter-num counter-num-${cartItem.dishId}" id="${matchingDish.id}">
           <button class="plus-btn" data-plus-btn="${cartItem.dishId}">+</button>
@@ -81,7 +81,7 @@ export function renderOrderSummary() {
 
         <div class="cart-dish-bottom">
           <div class="save-remove-btn">
-            <button class="remove-btn"><i class="fa-solid fa-xmark"></i></button>
+            <button class="remove-btn js-remove-btn" data-dish-id="${matchingDish.id}"><i class="fa-solid fa-xmark"></i></button>
             <button class="save-btn"><i class="fa-solid fa-arrow-down"></i></button>
           </div>
         </div>
@@ -92,14 +92,21 @@ export function renderOrderSummary() {
 
   document.querySelector(".js-order-summary").innerHTML = cartSummaryHTML;
   attachCounterEvents();
+
+  updateCartLabel();
+
+  document.querySelectorAll(".js-remove-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const { dishId } = btn.dataset;
+
+      removeFromCart(dishId);
+      renderOrderSummary();
+    });
+  });
 }
 
-function updateCartQuantity(dishId, quantity) {
-  const cartItem = cart.find((item) => item.dishId === dishId);
-
-  if (cartItem) {
-    cartItem.quantity = quantity;
-  }
+function updateQuantity(dishId, quantity) {
+  updateCartQuantity(dishId, quantity);
   updateCartLabel();
   renderOrderSummary();
 }
@@ -112,7 +119,7 @@ function attachCounterEvents() {
       let count = parseInt(input.value) - 1;
       count = count < 1 ? 1 : count;
       input.value = count;
-      updateCartQuantity(dishId, count);
+      updateQuantity(dishId, count);
     });
   });
 
@@ -123,17 +130,7 @@ function attachCounterEvents() {
       let count = parseInt(input.value) + 1;
       count = count > 10 ? 10 : count;
       input.value = count;
-      updateCartQuantity(dishId, count);
-    });
-  });
-
-  document.querySelectorAll(".counter-num").forEach((input) => {
-    input.addEventListener("change", () => {
-      const dishId = input.id;
-      let count = parseInt(input.value);
-      count = isNaN(count) || count < 1 ? 1 : count;
-      input.value = count;
-      updateCartQuantity(dishId, count);
+      updateQuantity(dishId, count);
     });
   });
 }

@@ -1,11 +1,6 @@
 export function getDish(dishId) {
-  let matchingDish;
+  const matchingDish = dishes.find(dish => dish.id === dishId);
 
-  dishes.forEach((dish) => {
-    if (dish.id === dishId) {
-      matchingDish = dish;
-    }
-  });
   return matchingDish;
 }
 
