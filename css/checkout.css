@@ -115,11 +115,11 @@ p {
   object-fit: cover;
 }
 
-.zip-code {
+.destination {
   display: flex;
 }
 
-.zip-code i {
+.destination i {
   color: var(--product-border);
   font-size: 1rem;
 }

@@ -33,13 +33,7 @@ export function calculateCartQuantity() {
 }
 
 export function addToCart(dishId) {
-  let matchingItem;
-
-  cart.forEach((cartItem) => {
-    if (dishId === cartItem.dishId) {
-      matchingItem = cartItem;
-    }
-  });
+  const matchingItem = cart.find(cartItem => cartItem.dishId === dishId);
 
   if (matchingItem) {
     matchingItem.quantity += 1;
