@@ -1,6 +1,6 @@
 import { activeHeaderMenu } from './utils/headerAndFooter.js';
 import { renderOrderSummary } from './checkout/orderSummary.js';
-import { cart } from './data/cart.js';
+import { renderPaymentSummary } from './checkout/paymentSummary.js';
 import { calculateCartQuantity } from './data/cart.js';
 
 activeHeaderMenu();
@@ -14,3 +14,4 @@ export function updateCartLabel() {
 
 updateCartLabel();
 renderOrderSummary();
+renderPaymentSummary();

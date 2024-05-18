@@ -1,3 +1,5 @@
+import { getDeliveryOption } from "./deliveryOptions.js";
+
 export let cart;
 
 loadFromStorage();
@@ -10,10 +12,12 @@ export function loadFromStorage() {
       {
         dishId: "03080a0a-cea3-46c0-8069-0e66573cb727",
         quantity: 2,
+        deliveryOptionId: "1",
       },
       {
         dishId: "8678ed17-02bc-4a68-914a-088527971c8b",
         quantity: 1,
+        deliveryOptionId: "2",
       },
     ];
   }
@@ -41,6 +45,7 @@ export function addToCart(dishId) {
     cart.push({
       dishId,
       quantity: 1,
+      deliveryOptionId: "1",
     });
   }
   saveToStorage();
@@ -64,5 +69,21 @@ export function removeFromCart(dishId) {
     }
   });
   cart = newCart;
+  saveToStorage();
+}
+
+export function updateDeliveryOption(dishId, deliveryOptionId) {
+  const matchingItem = cart.find(cartItem => dishId === cartItem.dishId);
+
+  if (!matchingItem) {
+    return;
+  }
+
+  const deliveryOption = getDeliveryOption(deliveryOptionId);
+
+  if (!deliveryOption) {
+    return;
+  }
+  matchingItem.deliveryOptionId = deliveryOptionId;
   saveToStorage();
 }

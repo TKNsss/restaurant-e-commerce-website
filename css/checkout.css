@@ -277,6 +277,8 @@ i.fa-solid.fa-lock {
 }
 
 .checkout-now-btn {
+  text-align: center;
+  display: inline-block;
   width: 100%;
   padding: .5em;
   background: var(--light-black);
@@ -287,6 +289,7 @@ i.fa-solid.fa-lock {
   transition: all 100ms linear;
   margin-bottom: .5em;
 }
+
 
 .checkout-now-btn:hover {
   background: transparent;
