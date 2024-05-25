@@ -1,0 +1,64 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+
+
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/members/friend3.jpg");
+  min-height: 100%;
+}
+
+.ava-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.Info {
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media (max-width: 768px) {
+  .w3-main {
+    margin-left: 0;
+  }
+
+  .w3-sidebar {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  .w3-sidebar.w3-animate-right {
+    right: 0;
+  }
+
+  .w3-row-padding {
+    flex-direction: column;
+  }
+
+  .w3-half {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .w3-jumbo {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,84 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/members/mem3.jpg");
+  min-height: 100%;
+}
+
+.avatar-img {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+
+.dark-light-btn {
+  margin-top: 1.5em;
+  opacity: .5;
+}
+
+@media (min-width: 601px) {
+  .avatar-img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .avatar-img {
+    width: 100%;
+  }
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .w3-text-grey {
+  color: #b0b0b0 !important;
+}
+
+body.dark-mode .w3-light-grey {
+  background-color: #333333 !important;
+  color: #f0f0f0;
+}
+
+body.dark-mode .w3-dark-grey {
+  background-color: #444444 !important;
+  color: #f0f0f0;
+}
+
+body.dark-mode .w3-black {
+  background-color: #1e1e1e !important;
+  color: #f0f0f0 !important;
+}
+
+.friend-heading,
+.friend-name,
+.friend-description {
+  color: #333;
+}
+
+body.dark-mode .friend-heading,
+body.dark-mode .friend-name,
+body.dark-mode .friend-description {
+  color: #e0e0e0;
+}
+.large-chef {
+  font-size: 2em;
+  font-weight: bold;
+}

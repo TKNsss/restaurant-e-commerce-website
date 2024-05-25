@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân</title>
+
+    <link rel="stylesheet" href="./css/nguyen.css">
+    <link rel="stylesheet" href="./css/hung.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://kit.fontawesome.com/cc11e1c1b7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header-top">
+      <div class="container flex">
+        <div class="menu">
+          <div class="menuToggle">
+            <input class="check" type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="menu__text">Menu</div>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="contact.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#info" class="nav__link">Info</a></li> 
+            <li class="nav__item dropdown">
+              <a href="#" class="nav__link">Others</a>
+
+              <div class="dropdown-content">
+                <a href="nguyen.html">Nguyên</a>
+                <a href="khue.html">Khuê</a>
+                <a href="hieu.html">Hiếu</a>
+                <a href="hung.html">Hưng</a>
+                <a href="minh.html">Minh</a>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="nav__list nav__list--secondary">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="fa-brands fa-square-github"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="fa-brands fa-square-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <header class="hd">
+      <div id="personal">
+        <img
+          src="./images/members/friend4.jpg"
+          alt=""
+        />
+        <div id="profile">
+          <div class="word">
+            <p id="hello">HEY! HUNG IS HERE</p>
+            <br />
+            <h1>WELCOME TO MY</h1>
+            <h1>PERSONAL PROFILE</h1>
+            <br />
+            <p>A person with a strong passion for food</p>
+          </div>
+          <button id="about_me">ABOUT ME</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="the_width">
+      <center>
+        <div class="personal_information the_width">
+          <div class="card" id="card1">
+            <div>
+              <i class="fa-solid fa-lightbulb"></i>
+              <br />
+              <br />
+              <p style="color: rgb(3, 182, 182)">BASIC INFOR</p>
+            </div>
+          </div>
+          <div class="card" id="card2">
+            <div>
+              <i class="fa-solid fa-circle-info"></i>
+              <br />
+              <br />
+              <p style="color: rgb(3, 182, 182)">THE SOURCE OF PASSION</p>
+            </div>
+          </div>
+          <div class="card" id="card3">
+            <div>
+              <i class="fa-solid fa-gamepad"></i>
+              <br />
+              <br />
+              <p style="color: rgb(3, 182, 182)">YOUR OWN DESIRE</p>
+            </div>
+          </div>
+        </div>
+      </center>
+    </main>
+    <footer></footer>
+
+    <!-- Modal structure -->
+    <div id="modal" class="modal">
+      <div id="modal-content" class="modal-content">
+        <span id="close">&times;</span>
+        <div id="modal-text"></div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("modal");
+        const modalText = document.getElementById("modal-text");
+        const closeModal = document.getElementById("close");
+
+        const cards = [
+          {
+            id: "card1",
+            content: `
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <br><br>
+                  <p style="color: rgb(3, 182, 182);">BASIC INFOR</p>
+                  <div class="card-content">
+                  I am a 2nd year student of information technology with many ambitions. Not just a technology enthusiast,
+                  I am also a skillful person with a great passion for food.
+                  </div>
+              `,
+          },
+          {
+            id: "card2",
+            content: `
+                  <i class="fa-solid fa-circle-info"></i>
+                  <br><br>
+                  <p style="color: rgb(3, 182, 182);">THE SOURCE OF PASSION</p>
+                  <div class="card-content">
+                  Actually, this passion for cooking started quite strangely. From someone who has no interest in cooking. Student life forced this lazy guy to work to survive.
+                  From then on I realized: "Cooking is also...fun".
+                  </div>
+              `,
+          },
+          {
+            id: "card3",
+            content: `
+                  <i class="fa-solid fa-gamepad"></i>
+                  <br><br>
+                  <p style="color: rgb(3, 182, 182);">YOUR OWN DESIRE</p>
+                  <div class="card-content">
+                  Studying information technology but passionate about cooking. Many people will consider choosing either one. And I was like: "Why choose when I can have both?".
+                  From there, the idea of ​​building a food website began.
+                  </div>
+              `,
+          },
+        ];
+
+        // Add event listeners for cards
+        cards.forEach((card) => {
+          document
+            .getElementById(card.id)
+            .addEventListener("click", function () {
+              modalText.innerHTML = card.content;
+              modal.style.display = "flex";
+            });
+        });
+
+        // Add event listener for the "ABOUT ME" button
+        document
+          .getElementById("about_me")
+          .addEventListener("click", function () {
+            modalText.innerHTML = `
+              <p>Tên: Triệu Quang Hưng</p>
+              <p>Trâm ngôn sống: "Nhìn vào hiện tại, sống vì tương lai"</p>
+              <p>Tuổi: 20</p>
+              <p>Chuyên ngành: Phát triển phần mềm</p>
+              <p>Sở thích: Nấu ăn, đọc sách, chơi game, tập thể thao</p>
+          `;
+            modal.style.display = "flex";
+          });
+
+        // Hide the modal when clicking on the close button
+        closeModal.addEventListener("click", function () {
+          modal.style.display = "none";
+        });
+
+        // Hide the modal when clicking outside the modal content
+        window.addEventListener("click", function (event) {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

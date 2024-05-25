@@ -29,8 +29,8 @@ export function renderOrderSummary() {
           <input type="number" value="${
             cartItem.quantity
           }" class="counter-num counter-num-${cartItem.dishId}" id="${
-      matchingDish.id
-    }">
+            matchingDish.id
+          }">
           <button class="plus-btn" data-plus-btn="${cartItem.dishId}">+</button>
         </div>
 
@@ -43,8 +43,8 @@ export function renderOrderSummary() {
         <div class="cart-dish-main">
           <div class="dish-img-wrapper">
             <img class="dish-img" src="${matchingDish.image}" alt="${
-      matchingDish.imgName
-    }">
+              matchingDish.imgName
+            }">
           </div>
 
           <div class="delivery-detail">
