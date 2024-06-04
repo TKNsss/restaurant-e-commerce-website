@@ -80,7 +80,7 @@ function updateCartQuantity() {
 
 updateCartQuantity();
 
-document.querySelectorAll(".js-add-to-cart").forEach(link => {
+document.querySelectorAll(".js-add-to-cart").forEach(link => { 
   link.addEventListener("click", () => {
     const { dishId } = link.dataset;
 
