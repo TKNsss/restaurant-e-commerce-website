@@ -51,7 +51,7 @@ dishes.forEach((dish) => {
             dish.id
           }}"><i class="fas fa-shopping-cart"></i></a></li>
           <li><a href="#"><i class="fas fa-heart heart-icon"></i></a></li>
-          <li><a class="js-add-to-cart" data-dish-id="${dish.id}"href="#${
+          <li><a class="js-add-to-cart" data-dish-id="${dish.id}" href="#${
             dish.id
           }"><i class="fas fa-plus plus-icon"></i></a></li>
           <li><a target="_blank" href="${
